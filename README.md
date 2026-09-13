@@ -63,7 +63,7 @@ The system enforces three strictly decoupled request paths:
 ### One-Command Setup & Run:
 ```bash
 # Clone the repository
-git clone https://github.com/d0674108-a11y/flyrank-capstone-widget-platform.git
+git clone https://github.com/deepak007679/flyrank-capstone-widget-platform.git
 cd flyrank-capstone-widget-platform
 
 # Install dependencies and start server on port 8000
