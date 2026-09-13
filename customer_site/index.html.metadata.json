@@ -1,0 +1,4 @@
+{
+  "summary":  "Customer website test page on a second origin (e.g., localhost:5500) embedding the widget script via a single script tag to prove cross-origin rendering and CORS submission.",
+  "updatedAt":  "2026-09-13T12:46:37.468863700Z"
+}

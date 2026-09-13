@@ -1,0 +1,59 @@
+# FlyRank Backend Capstone Evaluator Manifest
+# Embeddable Widget & Lead-Capture Platform
+# Student: Deepak R
+
+version: "1.0"
+name: "flyrank-capstone-widget-platform"
+language: "python"
+framework: "fastapi"
+
+run: "uvicorn main:app --host 0.0.0.0 --port 8000"
+seed: "curl -s -X POST http://localhost:8000/admin/seed"
+test: "pytest -v tests/test_probes.py"
+
+base_url: "http://localhost:8000"
+
+endpoints:
+  health:
+    path: "/health"
+    method: "GET"
+    expected_status: 200
+
+  widget_bundle:
+    path: "/widget.js"
+    method: "GET"
+    expected_status: 200
+    expected_headers:
+      Cache-Control: "public, max-age=31536000, immutable"
+
+  widget_config:
+    path: "/widgets/widget-demo-123/config"
+    method: "GET"
+    expected_status: 200
+    expected_headers:
+      Cache-Control: "public, max-age=60"
+
+  public_submission:
+    path: "/widgets/widget-demo-123/submissions"
+    method: "POST"
+    expected_status: 201
+
+  admin_widgets:
+    path: "/admin/widgets"
+    method: "GET"
+    auth_header: "X-API-Key: tenant-a-secret-key"
+    expected_status: 200
+
+  dashboard_stats:
+    path: "/dashboard/stats"
+    method: "GET"
+    auth_header: "X-API-Key: tenant-a-secret-key"
+    expected_status: 200
+
+probes:
+  probe_1: "test_probe_1_valid_cross_origin_submission"
+  probe_2: "test_probe_2_malformed_and_oversized_payloads"
+  probe_3: "test_probe_3_rate_limiting_burst"
+  probe_4: "test_probe_4_geo_fallback_chain"
+  probe_5: "test_probe_5_safe_side_effect_failure_does_not_block"
+  probe_6: "test_probe_6_honeypot_spam_blocking"

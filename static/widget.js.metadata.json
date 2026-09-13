@@ -1,0 +1,4 @@
+{
+  "summary":  "Embeddable vanilla JavaScript widget loader for customer websites. Extracts script URL parameters, fetches config, renders responsive form with honeypot trap, and submits cross-origin with error handling.",
+  "updatedAt":  "2026-09-13T12:46:27.539886200Z"
+}

@@ -1,0 +1,4 @@
+{
+  "summary":  "Automated test suite with Pytest & FastAPI TestClient verifying all 6 acceptance probes, tenant isolation, CORS preflight, caching headers, and error boundaries.",
+  "updatedAt":  "2026-09-13T12:46:50.611873400Z"
+}

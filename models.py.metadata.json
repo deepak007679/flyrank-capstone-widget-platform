@@ -1,0 +1,4 @@
+{
+  "summary":  "Data models, Pydantic schemas, and SQLite database engine for the Embeddable Widget & Lead-Capture Platform capstone. Implements tenant isolation, indexes, and clean typing.",
+  "updatedAt":  "2026-09-13T12:45:42.708778300Z"
+}
