@@ -1,4 +1,0 @@
-{
-  "summary":  "Main FastAPI backend server for the Capstone Embeddable Widget Platform. Features multi-tenant CRUD, CORS preflight handling, caching headers, rate limiting, geo fallback, and dashboard analytics.",
-  "updatedAt":  "2026-09-13T12:46:13.640045600Z"
-}

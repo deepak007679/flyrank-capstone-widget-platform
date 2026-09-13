@@ -1,4 +1,0 @@
-{
-  "summary":  "Resilient services layer for Capstone: sliding-window rate limiter per IP/widget, honeypot spam protection, deterministic multi-provider geo-enrichment fallback chain, and safe side-effect executor.",
-  "updatedAt":  "2026-09-13T12:45:55.151509600Z"
-}
